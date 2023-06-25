@@ -2,7 +2,9 @@ import '../assets/styles/Header.scss'
 import PropTypes from 'prop-types'
 import profilePhoto from '../assets/images/image-jeremy.png'
 
-const Header = ({ setDataType }) => {
+const Header = ({ setDataType, dataType }) => {
+
+  console.log('Header', dataType)
   return (
     <header className="header">
       <div className="header__bio">
@@ -14,9 +16,9 @@ const Header = ({ setDataType }) => {
       </div>
       <nav className="header__nav">
         <ul className="header__nav--list">
-          <li className="header__nav--list__item"><button className="btn" onClick={() => setDataType('daily')}>Daily</button></li>
-          <li className="header__nav--list__item"><button className="btn" onClick={() => setDataType('weekly')}>Weekly</button></li>
-          <li className="header__nav--list__item"><button className="btn" onClick={() => setDataType('monthly')}>Monthly</button></li>
+          <li className="header__nav--list__item"><button className={`btn ${dataType === 'daily' ? 'active' : ''}`} onClick={() => setDataType('daily')}>Daily</button></li>
+          <li className="header__nav--list__item"><button className={`btn ${dataType === 'weekly' ? 'active' : ''}`} onClick={() => setDataType('weekly')}>Weekly</button></li>
+          <li className="header__nav--list__item"><button className={`btn ${dataType === 'monthly' ? 'active' : ''}`} onClick={() => setDataType('monthly')}>Monthly</button></li>
         </ul>
       </nav>
     </header>
@@ -24,7 +26,8 @@ const Header = ({ setDataType }) => {
 }
 
 Header.propTypes = {
-  setDataType: PropTypes.func.isRequired
+  setDataType: PropTypes.func.isRequired,
+  dataType: PropTypes.string.isRequired
 }
 
 export default Header

@@ -9,7 +9,7 @@ function App() {
 
   return (
     <main className='app'>
-      <Header setDataType={setDataType} />
+      <Header setDataType={setDataType} dataType={dataType} />
       <CardList cardData={cardData} dataType={dataType} />
     </main>
   )
