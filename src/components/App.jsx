@@ -1,6 +1,6 @@
 import Header from './Header'
 import CardList from './CardList'
-import '../styles/App.scss'
+import '../assets/styles/App.scss'
 
 function App() {
   // const [count, setCount] = useState(0)
