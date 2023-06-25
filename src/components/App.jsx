@@ -1,4 +1,5 @@
-import Attribution from './Attribution'
+import Header from './Header'
+import CardList from './CardList'
 import '../styles/App.scss'
 
 function App() {
@@ -6,8 +7,8 @@ function App() {
 
   return (
     <main className='app'>
-      <h1>Sass successfully added!</h1>    
-      <Attribution />
+      <Header />
+      <CardList />
     </main>
   )
 }
