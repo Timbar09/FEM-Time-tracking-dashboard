@@ -1,4 +1,5 @@
 import '../assets/styles/Header.scss'
+import PropTypes from 'prop-types'
 import profilePhoto from '../assets/images/image-jeremy.png'
 
 const Header = ({ setDataType }) => {
@@ -20,6 +21,10 @@ const Header = ({ setDataType }) => {
       </nav>
     </header>
   )
+}
+
+Header.propTypes = {
+  setDataType: PropTypes.func.isRequired
 }
 
 export default Header

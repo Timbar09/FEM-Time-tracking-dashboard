@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import Card from "./Card"
 
 const CardList = ({ cardData, dataType }) => {
@@ -9,6 +10,11 @@ const CardList = ({ cardData, dataType }) => {
       })}
     </ul>
   )
+}
+
+CardList.propTypes = {
+  cardData: PropTypes.array.isRequired,
+  dataType: PropTypes.string.isRequired
 }
 
 export default CardList
