@@ -18,5 +18,11 @@
 .app {
   position: relative;
   padding: 5rem 1.5rem;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .card__list {
+    background-color: rgba(255, 0, 0, 0.393);
+  }
 }

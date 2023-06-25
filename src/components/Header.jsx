@@ -1,7 +1,7 @@
 import '../assets/styles/Header.scss'
 import profilePhoto from '../assets/images/image-jeremy.png'
 
-const Header = () => {
+const Header = ({ setDataType }) => {
   return (
     <header className="header">
       <div className="header__bio">
@@ -13,9 +13,9 @@ const Header = () => {
       </div>
       <nav className="header__nav">
         <ul className="header__nav--list">
-          <li className="header__nav--list__item"><button className="btn">Daily</button></li>
-          <li className="header__nav--list__item"><button className="btn">Weekly</button></li>
-          <li className="header__nav--list__item"><button className="btn">Monthly</button></li>
+          <li className="header__nav--list__item"><button className="btn" onClick={() => setDataType('daily')}>Daily</button></li>
+          <li className="header__nav--list__item"><button className="btn" onClick={() => setDataType('weekly')}>Weekly</button></li>
+          <li className="header__nav--list__item"><button className="btn" onClick={() => setDataType('monthly')}>Monthly</button></li>
         </ul>
       </nav>
     </header>
