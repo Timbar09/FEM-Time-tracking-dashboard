@@ -14,16 +14,16 @@ const Card = ({ data, dataType }) => {
   }
 
   return (
-    <li className='card'>
+    <li className={`card ${data.title.toLowerCase().replace(' ', '-')}`}>
       <div className="card__content">
         <header className="card__header">
-          <h2 className="card__title">{data.title}</h2>
-          <img className="card__ellipsis" src={ellipsis} alt="ellipsis" />
+          <h2 className="card__header--title">{data.title}</h2>
+          <img className="card__header--ellipsis" src={ellipsis} alt="ellipsis" />
         </header>
 
-        <div className="card__timeframes">
-          <span className="card__timeframe card__timeframe--current">{data.timeframes[dataType].current}hrs</span>
-          <span className="card__timeframe card__timeframe--previous">{previousTitle()} - {data.timeframes[dataType].previous}hrs</span>
+        <div className="card__timeframe--grid">
+          <span className="card__timeframe--current">{data.timeframes[dataType].current}hrs</span>
+          <span className="card__timeframe--previous">{previousTitle()} - {data.timeframes[dataType].previous}hrs</span>
         </div>
       </div>
     </li>
