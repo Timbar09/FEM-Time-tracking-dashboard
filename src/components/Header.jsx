@@ -13,9 +13,9 @@ const Header = () => {
       </div>
       <nav className="header__nav">
         <ul className="header__nav--list">
-          <li className="header__nav--list__item">Daily</li>
-          <li className="header__nav--list__item">Weekly</li>
-          <li className="header__nav--list__item">Monthly</li>
+          <li className="header__nav--list__item"><button className="btn">Daily</button></li>
+          <li className="header__nav--list__item"><button className="btn">Weekly</button></li>
+          <li className="header__nav--list__item"><button className="btn">Monthly</button></li>
         </ul>
       </nav>
     </header>

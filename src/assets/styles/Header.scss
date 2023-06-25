@@ -1,12 +1,13 @@
 .header {
+  background-color: rgba(255, 0, 0, 0.279);
+  border-radius: 1rem;
   
   &__bio {
-    opacity: .3;
     padding: 2.0625rem 1.8125rem 1.5625rem;
     display: flex;
     gap: 1.125rem;
     background-color: var(--clr-blue);
-    border-radius: 1rem;
+    border-radius: inherit;
 
     > div:last-child {
       flex: 1;
@@ -34,6 +35,23 @@
         font-weight: 400;
         font-size: 1.5rem;
         line-height: 16px;
+      }
+    }
+  }
+
+  &__nav {
+    &--list {
+      padding: 1.4rem 1.375rem 1.4375rem 2.125rem;
+      display: flex;
+      justify-content: space-between;
+
+      &__item {
+        button {
+          all: unset;
+          font-size: 1rem;
+          font-weight: 400;
+          letter-spacing: 1px;
+        }
       }
     }
   }
