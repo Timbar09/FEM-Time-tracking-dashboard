@@ -1,0 +1,70 @@
+.header {
+  background-color: var(--clr-dark-blue);
+  border-radius: 1rem;
+  
+  &__bio {
+    padding: 2.0625rem 1.8125rem 1.5625rem;
+    display: flex;
+    gap: 1.125rem;
+    background-color: var(--clr-blue);
+    border-radius: inherit;
+
+    > div:last-child {
+      flex: 1;
+    }
+
+    &--image {
+      width: 4.0625rem;
+      height: auto;
+      object-fit: cover;
+      border: solid 3px var(--clr-white);
+      border-radius: 50%;
+    }
+
+    &--title {
+      padding-top: .5rem; 
+      letter-spacing: -0.5px;
+
+      span {
+        color: var(--clr-pale-blue);
+        font-weight: 400;
+        font-size: 0.95rem;
+      }
+
+      h1 {
+        margin: .35rem 0 0;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 16px;
+      }
+    }
+  }
+
+  &__nav {
+    &--list {
+      padding: 1.4rem 1.375rem 1.4375rem 2.125rem;
+      display: flex;
+      justify-content: space-between;
+
+      &__item {
+        button {
+          all: unset;
+          color: var(--clr-pale-blue);
+          font-size: 1rem;
+          font-weight: 400;
+          letter-spacing: 1px;
+          cursor: pointer;
+          transition: color 150ms ease-in-out;
+
+          &:hover {
+            color: var(--clr-white);
+          }
+
+          &.active {
+            color: var(--clr-white);
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+#root {
+  position: relative;
+  background-image: url('../../design/mobile-design.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(226, 41%, 10%, 0.593);
+  }
+}
+
+.app {
+  position: relative;
+  padding: 5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  .card__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}

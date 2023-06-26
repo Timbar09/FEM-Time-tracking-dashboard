@@ -11,6 +11,9 @@ node_modules
 dist
 dist-ssr
 *.local
+.prettierignore
+style-guide.md
+FEM_INDEX.html
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +25,11 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Avoid accidental upload of the Sketch and Figma design files
+design
+*.sketch
+*.fig
+
+# Avoid accidental XD upload if you convert the design file
+*.xd
