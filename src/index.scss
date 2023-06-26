@@ -22,7 +22,6 @@
   font-weight: 300;
   box-sizing: border-box;
 
-  /* color-scheme: light dark; */
   color: var(--clr-white);
   background-color: var(--clr-very-dark-blue);
 
@@ -56,16 +55,3 @@ ul {
   padding: 0;
   list-style: none;
 }
-
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */

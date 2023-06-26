@@ -4,7 +4,6 @@ import profilePhoto from '../assets/images/image-jeremy.png'
 
 const Header = ({ setDataType, dataType }) => {
 
-  console.log('Header', dataType)
   return (
     <header className="header">
       <div className="header__bio">

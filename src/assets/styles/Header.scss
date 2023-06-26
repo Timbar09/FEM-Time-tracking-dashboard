@@ -4,7 +4,6 @@
   background-color: var(--clr-dark-blue);
   border-radius: 1rem;
   height: max-content;
-  outline: solid 1px;
 
   @include m.breakpoint-up('medium') {
     min-width: 15.9375rem;
